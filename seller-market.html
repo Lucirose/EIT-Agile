@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Second-hand Book Trading Website - Seller Market</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			font-size: 36px;
+			margin: 0;
+		}
+		p {
+			font-size: 18px;
+			margin: 20px 0;
+		}
+		nav {
+			background-color: #ccc;
+			padding: 10px;
+			text-align: center;
+		}
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		nav li {
+			display: inline-block;
+			margin-right: 20px;
+		}
+		nav a {
+			color: #444;
+			text-decoration: none;
+		}
+		nav a:hover {
+			color: #000;
+		}
+		section {
+			margin: 20px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			text-align: center;
+			max-width: 800px;
+		}
+		form {
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    margin: 20px;
+		}
+		label {
+		    font-size: 18px;
+		    margin-bottom: 10px;
+		}
+		input[type=text], input[type=file] {
+		    padding: 10px;
+		    margin-bottom: 20px;
+		    border-radius: 5px;
+		    border: 1px solid #ccc;
+		    width: 80%;
+		    max-width: 500px;
+		}
+		textarea {
+		    padding: 10px;
+		    margin-bottom: 20px;
+		    border-radius: 5px;
+		    border: 1px solid #ccc;
+		    width: 80%;
+		    max-width: 500px;
+		    height: 100px;
+		}
+		button[type=submit] {
+		    padding: 10px;
+		    background-color: #444;
+		    color: #fff;
+		    border: none;
+		    border-radius: 5px;
+		    width: 80%;
+		    max-width: 500px;
+		    cursor: pointer;
+		}
+		button[type=submit]:hover {
+		    background-color: #000;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Second-hand Book Trading Website</h1>
+		<p>Welcome to our website! Here, you can buy or sell your second-hand books.</p>
+	</header>
+	<nav>
+	
+
+        <ul>
+		<a href="home.html">Home</a>
+		<a href="seller-market.html">Seller Market</a> 
+		<a href="buyer-market.html">Buyer Market</a>   
+		<a href="about-us.html">About Us</a>
+	</ul>
+</nav>
+
+<style>
+	nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 20px 0; 
+	}
+	nav a {
+		display: inline-block; 
+		padding: 10px 20px; 
+		text-decoration: none;
+		color: #333;
+	}
+	nav a:hover {
+		background-color: #eee; 
+	}
+</style>
+	<section>
+		<h2>Sell your Second-hand Books</h2>
+		<p>If you have some second-hand books that you want to sell, please fill out the form below:</p>
+		
+		<form>
+			<label for="title">Book Title:</label>
+			<input type="text" id="title" name="title" placeholder="Enter the book title" required>
+			
+			<label for="author">Author:</label>
+			<input type="text" id="author" name="author" placeholder="Enter the author's name" required>
+			
+			<label for="condition">Condition:</label>
+			<select id="condition" name="condition" required>
+				<option value="">Choose the condition of the book</option>
+				<option value="like-new">Like New</option>
+				<option value="very-good">Very Good</option>
+				<option value="good">Good</option>
+				<option value="acceptable">Acceptable</option>
+			</select>
+			
+			<label for="price">Price:</label>
+			<input type="text" id="price" name="price" placeholder="Enter the price of the book" required>
+			
+			<label for="image">Book Image:</label>
+			<input type="file" id="image" name="image" accept="image/*" required>
+			
+			<label for="description">Description:</label>
+			<textarea id="description" name="description" placeholder="Enter a description of the book" required></textarea>
+			
+			<label for="contact">Contact Information:</label>
+			<input type="text" id="contact" name="contact" placeholder="Enter your email or phone number" required>
+			
+			<button type="submit">Submit</button>
+		</form>
+		
+		<p>Please make sure to fill out all the required fields and provide accurate information. By submitting this form, you agree to our terms and conditions.</p>
+	</section>
+</body>
+</html>
